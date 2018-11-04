@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from '../containers/Hero';
-import TwoCol from '../containers/TwoCol';
 import CallToAction from '../containers/CallToAction';
 
 import axios from 'axios';
@@ -32,10 +31,11 @@ export default class HomePage extends React.Component {
                 })
     }
 
-     handleClick(e) {
-        e.preventDefault();
-        console.log('The link was clicked.');
+    handleClick() {
+        this.preventDefault();
+        alert(this)
       }
+
 
     render() {
         return (
@@ -51,8 +51,7 @@ export default class HomePage extends React.Component {
                             key={i}
                             img={data.img}
                             altText={data.altText}
-                            // onClick=handleClick()
-                            
+                            onPress ={this.handleClick.bind(this)}                            
                         />
                     )
                 })}

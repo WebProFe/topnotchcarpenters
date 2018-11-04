@@ -31,7 +31,7 @@ class DesktopNav extends Component {
               <li className="nav__list__section__text">Gallery</li>
             </NavLink>
             <NavLink className="nav__list__section nav__list__section--cta" to="/contact" activeClassName="desktop-nav-active">
-            <i class="fa fa-envelope"></i><li className="nav__list__section__text">Contact</li>
+            <i className="fa fa-envelope"></i><li className="nav__list__section__text">Contact</li>
             </NavLink>
           </span>
         </div>
